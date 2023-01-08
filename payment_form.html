@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment form</title>
+    <link rel="stylesheet" href="style_1.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <form action="backend.php">
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>required fields are followed by *</p>
+        <p >Name * : <input type="text" name="name" required placeholder="Name" /></p>
+        <fieldset>
+          <legend>Gender*</legend>
+          <p>
+            Male : <input type="radio" name="Gender" id="" required /> Female
+            <input type="radio" name="Gender" id="" />
+          </p>
+        </fieldset>
+        <p>
+          Address*:
+          <textarea
+          name="address"
+          id="address"
+          cols="100"
+          rows="10"
+          required placeholder="Enter the address"
+          ></textarea>
+        </p>
+        p>
+        <p>Email *: <input type="email" name="email" id="email" required placeholder="pandey@gamil.com"/></p>
+        <p>
+          Pin code : <input type="number" name="pin code" id="pincode" required />
+        </p>
+        <hr />
+        
+        <h2>Payment Details</h2>
+        <p>
+          Card Types *:
+          <select name="CT" id="CT" required>
+            <option value="">Select the Card</option>
+            <option value="visa">visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Master">Master</option>
+          </select>
+        </p>
+        <p>
+          Account Number *:
+          <input type="number" name="acc no" id="acc no" required />
+        </p>
+        <p>
+          expiration date *:
+          <input type="date" name="exp date" id="exp date" required />
+        </p>
+        <p>cvv* : <input type="number" name="cv" id="cv" required /></p>
+        <p>
+          <input type="submit" value="Pay Now" />
+          <input type="reset" value="reset" />
+        </p>
+      </form>
+    </div>
+    </body>
+    </html>
+    
